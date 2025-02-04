@@ -2,36 +2,66 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="เกมเติมตัวอักษรภาษาอังกฤษเพื่อฝึกทักษะคำศัพท์">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="เกมเติมตัวอักษรภาษาอังกฤษเพื่อฝึกทักษะคำศัพท์">
     <title>Complete Word Game</title>
     <style>
+        /* ตั้งค่าพื้นฐาน */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #FAF0E6;
+            background-color: #FCE4EC; /* ชมพูอ่อนพาสเทล */
             margin: 0;
             padding: 0;
         }
+
+        /* หัวข้อ */
         header {
-            background-color: #FFCCCC;
-            color: white;
-            padding: 20px;
+            background-color: #D1C4E9; /* ม่วงพาสเทล */
+            color: #4A148C;
+            padding: 15px;
             font-size: 24px;
         }
+
+        /* กล่องคอนเทนต์ */
         .container {
-            margin-top: 20px;
-        }
-        iframe {
-            width: 800px;
-            height: 600px;
-            border: 2px solid #FFF0F5;
-            background: white;
-        }
-        footer {
-            margin-top: 20px;
+            margin: 20px auto;
             padding: 10px;
-            background-color: #E6E6FA;
+            max-width: 90%;
+        }
+
+        /* กรอบเกม (iframe) */
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: 3px solid #AB47BC; /* ขอบสีม่วงสดใส */
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #EDE7F6;
+            color: #4A148C;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* ปรับขนาดสำหรับมือถือ */
+        @media (max-width: 600px) {
+            header {
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            iframe {
+                height: 300px; /* ปรับให้เหมาะกับจอเล็ก */
+            }
+
+            footer {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -41,7 +71,7 @@
 
     <div class="container">
         <p>ฝึกทักษะคำศัพท์ของคุณโดยการเติมตัวอักษรภาษาอังกฤษให้ถูกต้อง</p>
-        
+
         <!-- โหลดเกมจาก game.html -->
         <iframe src="โครงงานเกมเติมคำศัพท์ภาษาอังกฤษ.html"></iframe>
 
